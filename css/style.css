@@ -1,0 +1,219 @@
+/* Global CSS */
+:root{
+    /* bg color */
+    --primaryColor : #002939;
+    --secondaryColor : #DDC190;
+
+    /* font color */
+    --mainFont : 'Open Sans', sans-serif;
+    --headingFont: 'Merriweather', serif;
+
+}
+*{
+    box-sizing: border-box !important;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--mainFont);
+}
+.heading {
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 700;
+}
+.subheading{
+    font-weight: 300;
+}
+
+.section-margin{
+    margin-top: 100px;
+}
+
+
+/* navbar */
+.navbar{
+    background-color: var(--primaryColor);
+}
+.navbar-brand{
+    font-family: var(--headingFont);
+    font-weight: 900;
+}
+
+.navbar-brand span{
+    color: var(--secondaryColor);
+}
+
+.nav-link{
+    font-family: var(--headingFont);
+}
+
+.nav-link.active{
+    font-weight: 700;
+    color: var(--secondaryColor) !important;
+}
+
+.icons-home i{
+    font-size: 1.8rem;
+    color: var(--secondaryColor);
+}
+
+/* home banner */
+.home{
+    background-color: var(--primaryColor);
+    height: 650px;
+    padding-top: 12rem;
+}
+
+.home .heading{
+    color: var(--secondaryColor);
+}
+
+.btn-home .btn-buy{
+    background-color: var(--secondaryColor);
+    font-family: var(--headingFont);
+    font-weight: 700;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    border: 2px solid var(--secondaryColor);
+
+}
+
+.btn-home .btn-buy:hover{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+
+}
+
+.btn-home .btn-learn{
+    border: 2px solid var(--secondaryColor);
+    background-color: transparent;
+    color: var(--secondaryColor);
+    font-family: var(--headingFont);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    font-weight: 700;
+}
+
+.btn-home .btn-learn:hover{
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    font-family: var(--headingFont);
+    font-weight: 700;
+}
+
+/* service */
+.card-service{
+    background-color: var(--primaryColor);
+    box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    color: #fff;
+}
+.card-service:hover{
+    -webkit-transform: translateY(-0.625rem);
+    transform: translateY(-0.625rem);
+}
+
+.card-service .btn-service{
+    border: 2px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+    font-family: var(--headingFont);
+    font-weight: 700;
+}
+
+.card-service .btn-service:hover{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor) !important;
+
+}
+
+/* banner */
+.banner{
+    height: 350px;
+}
+
+.banner .container{
+    background-color: var(--primaryColor);
+    overflow-y: hidden;
+}
+
+.banner .btn-banner{
+    background-color: var(--secondaryColor);
+}
+
+.banner img{
+    bottom: -60%;
+}
+
+/* product */
+.product .populer h3{
+    font-size: 25px;
+}
+
+
+.populer i{
+    font-size: 2.5rem;
+    color: var(--secondaryColor);
+}
+
+
+/* Style tablet */
+
+@media screen and (min-width:768px){
+    .home{
+        padding-top: 14rem;
+    }
+    .home .heading{
+        font-size: 36px;
+    }
+
+    .banner img{
+        width: 60%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px){
+    .section-margin{
+        margin-top: 200px;
+    }
+    
+    .home .content-left{
+        padding-bottom: 50px;
+    }
+    .home .heading{
+        font-size: 46px;
+    }
+    .home .subheading{
+        font-size: 18px;
+    }
+
+    .home img{
+        right: 0;
+        bottom: -20%;
+    }
+
+    .home .img2{
+        right: 0;
+    }
+
+    .home .container, .home .row {
+        height: 100%;
+    }
+
+    .banner img{
+        top: 100%;
+    }
+
+    .banner .container{
+        padding: 0 5rem;
+    }
+
+    .banner{
+        height: 250px;
+    }
+}
